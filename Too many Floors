@@ -1,0 +1,20 @@
+Problem Code:FLOORS
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int newx = (int)Math.ceil(x/10.0);  // int/double = double
+		    int newy = (int)Math.ceil(y/10.0);  // type cast to int, since ceil gives out double value
+		    int floor = Math.abs(newy-newx);
+		    System.out.println(floor);
+		}
+	}
+}
+
