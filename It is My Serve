@@ -1,0 +1,19 @@
+Problem Code:MYSERVE
+
+
+Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int p = s.nextInt();
+		    int q = s.nextInt();
+		    int sum = p+q;
+		    int res = (sum%4);
+		    
+		    if(res < 2){
+		        System.out.println("Alice");
+		    }
+		    else{
+		        System.out.println("Bob");
+		    }
+		}
+
