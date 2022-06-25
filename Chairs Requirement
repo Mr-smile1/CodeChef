@@ -1,0 +1,23 @@
+Problem Code:CHAIRS_
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int res = x-y;
+		    if(res > -1){
+		        System.out.println(res);
+		    }
+		    else{
+		        System.out.println(0);
+		    }
+		}
+	}
+}
+
