@@ -1,0 +1,14 @@
+Problem Code:EMAILREM
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		    int n = s.nextInt();
+		    int u = s.nextInt();
+		    System.out.println(n-u);
+	}
+}
+
