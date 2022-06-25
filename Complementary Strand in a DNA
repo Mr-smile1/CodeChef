@@ -1,0 +1,31 @@
+Problem Code: DNASTRAND
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    String st = s.next();
+		    for(int i=0;i<n;i++){
+		        if(st.charAt(i) == 'A'){
+		            System.out.print("T");
+		        } 
+		        else if(st.charAt(i) == 'T'){
+		            System.out.print("A");
+		        } 
+		        else if(st.charAt(i) == 'C'){
+		            System.out.print("G");
+		        } 
+		        else{
+		            System.out.print("C");
+		        } 
+		    }
+		    System.out.println(" ");
+		}
+	}
+}
+
