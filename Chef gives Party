@@ -1,0 +1,25 @@
+Problem Code:PARTY2
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int x = s.nextInt();
+		    int k = s.nextInt();
+		    int afford = n*x;
+		    if(n*x <= k){
+		         System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
+
