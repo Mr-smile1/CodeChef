@@ -1,0 +1,16 @@
+ Problem Code:FIT 
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner ss = new Scanner(System.in);
+		int t = ss.nextInt();
+		while(t-- > 0){
+		    int x = ss.nextInt();
+		    System.out.println(x*10);
+		}
+	}
+}
+
