@@ -1,0 +1,66 @@
+Problem Code: REVSORT
+
+
+class Codechef
+{
+    public static boolean sol(int[] arr, int n, int x){
+        if(n == 1){
+		    return true;
+		}
+		    
+		for(int i=0;i<n-1;i++){
+		    if(arr[i] > arr[i+1]){
+		        if(arr[i] + arr[i+1] <= x){
+		            //Collections.swap(arr, i, i+1);
+		            int temp = arr[i];
+		            arr[i] = arr[i+1];
+		            arr[i+1] = temp;
+		        }
+		        else{
+		            return false;
+		        }
+		    }
+		}
+		return true;
+    }
+    
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();    // array length
+		    int x = s.nextInt();    // max sum to reverse sort
+		    
+		    int[] arr = new int[n];
+		    for(int i=0;i<n;i++){
+		        int v = s.nextInt();
+		        arr[i] = v;
+		    }
+		    
+		    if(sol(arr, n ,x)){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		    
+		    /*  ////////////////////////////////////
+		    int[] presum = new int[n];
+		    for(int i=0;i<n;i++){
+		        int sum = 0;
+		        sum += arr[i];
+		        presum[i] = sum;
+		    }
+		    
+		    for(int i=0;i<n;i++){
+		        System.out.print(presum[i]);
+		    }
+		    System.out.println(" ");
+		    ////////////////////////////////////////  */
+		    
+		}
+	}
+}
+
