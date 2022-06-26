@@ -1,0 +1,22 @@
+Problem Code:FLOW006
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int sum = 0;
+		    int n = s.nextInt();
+		    while(n > 0){
+		        int val = n%10;   // 12345 % 10 = 5    , 4  ,  3,  2,  1
+		        sum += val;       // 0 + 5 = 5         , 9  , 12, 14, 15
+		        n/=10;            // 12345 / 10 = 1234 , 123, 12,  1,  0
+		    }
+		    System.out.println(sum);
+		}
+	}
+}
+
