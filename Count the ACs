@@ -1,0 +1,36 @@
+Problem Code: ACS
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int p = s.nextInt();
+		    
+		    if(p == 0){
+		        System.out.println(0);
+		        continue;
+		    }
+		    
+		    int hundreds = 0;
+		    hundreds += p/100;    // gives number of hundreds
+		    
+		    p = p%100;               // gives number of ones
+		    int ones = 0;
+		    ones += p;  
+		    
+		    int res = ones + hundreds;
+		    
+		    if(res > 10){
+		        System.out.println(-1);
+		    }
+		    else{
+		        System.out.println(res);
+		    }
+		}
+	}
+}
+
