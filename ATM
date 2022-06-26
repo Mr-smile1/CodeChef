@@ -1,0 +1,19 @@
+Problem Code:HS08TEST
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		float n = s.nextFloat();
+		float f = s.nextFloat();
+		if(n%5==0 && f>=n+0.5f)
+            System.out.println(f-n-0.5f);
+        
+        else{
+            System.out.println(f);
+        }
+	}
+}
+
