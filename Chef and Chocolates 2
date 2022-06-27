@@ -1,0 +1,19 @@
+Problem Code:CHEFCHOCO
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int c = s.nextInt();     //total chocolate needed
+		    int x = s.nextInt();     //choco with him
+		    int y = s.nextInt();     //cost of 1 chocolate
+		        System.out.println((c - x)*y);
+		}
+	}
+}
+
