@@ -1,0 +1,22 @@
+Problem Code:MANGOES
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int z = s.nextInt();
+		    int mango = 0;
+		    mango = z - y;       // 11 - 5 = 6 
+		    mango /= x;          // 6 / 2 = 3
+		    System.out.println(mango);
+		}
+	}
+}
+
