@@ -1,0 +1,29 @@
+Problem Code:WATERFLOW
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int w = s.nextInt();
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int z = s.nextInt();
+		    int entry = y*z;
+		    if(w + entry < x){
+		        System.out.println("Unfilled");
+		    }
+		    else if(w + entry > x){
+		        System.out.println("overflow");
+		    }
+		    else{
+		        System.out.println("filled");
+		    }
+		}
+	}
+}
+
