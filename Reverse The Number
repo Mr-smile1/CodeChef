@@ -8,15 +8,15 @@ class Codechef
 		Scanner s = new Scanner(System.in);
 		int t = s.nextInt();
 		while(t-- > 0){
-		    int i = s.nextInt();
+		    int n = s.nextInt();
 		    int rev = 0;
-		    while(i != 0) {
-                int digit = i % 10;
-                rev = rev * 10 + digit;
-                i /= 10;
+		    while(n > 0) {
+                int digit = n % 10;      // 12345 % 10 = 5, 4, 3, 2, 1 
+                rev = rev * 10 + digit;  // 0 * 10 + 5 = 5, 5*10+4 = 54, 54*10+3 = 5434
+                n /= 10;                 // 12345/10 = 1234,
             }
             System.out.println(rev);
-		}
+	}
     } 
 }
 
