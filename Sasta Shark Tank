@@ -1,0 +1,25 @@
+Problem Code:SST
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    if((a*10)>(b*5)){
+		        System.out.println("First");
+		    }
+		    else if((b*5)==(a*10)){
+		        System.out.println("Any");
+		    }
+		    else{
+		        System.out.println("second");
+		    }
+		}
+	}
+}
+
