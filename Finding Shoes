@@ -1,0 +1,24 @@
+Problem Code:FINDSHOES
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int m = s.nextInt();
+		    if(m >= n){
+		        System.out.println(n);
+		    } 
+		    else{
+		        int ans = Math.abs((n * 2) - m);
+		        System.out.println(ans);
+		    }
+		}
+	}
+}
+
+
