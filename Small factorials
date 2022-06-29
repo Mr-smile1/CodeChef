@@ -1,0 +1,27 @@
+Problem Code:FCTRL2
+
+
+class Codechef
+{
+    //public static BigInteger fact(int n){
+    //    return n * fact(n-1);
+    //}
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    //int n = s.nextInt();
+		    //System.out.println(fact(n));
+		    
+		    int n = s.nextInt();
+            BigInteger fact = new BigInteger("1");
+            for(int i = 2; i <= n; i++)
+                fact = fact.multiply(BigInteger.valueOf(i));
+            System.out.println(fact);
+		}
+	}
+}
+
+
