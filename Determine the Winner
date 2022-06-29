@@ -1,0 +1,43 @@
+Problem Code:WINNERR
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int pa = s.nextInt();
+		    int pb = s.nextInt();
+		    int qa = s.nextInt();
+		    int qb = s.nextInt();
+		    int p,q;
+		    if(pa>pb){
+		       p=pa;
+		    }
+		    else{ 
+		       p=pb;
+		    }
+		   
+		    if(qa>qb){
+		        q=qa;
+		    } 
+		    else{
+		        q=qb;
+		    }
+		    
+		    if(p>q){
+		        System.out.println("q");
+		    } 
+		    else if(p<q){
+		        System.out.println("p");
+		    }
+		    else {
+		        System.out.println("tie");
+		    }
+		}
+	}
+}
+
+
