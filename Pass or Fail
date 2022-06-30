@@ -1,0 +1,25 @@
+Problem Code:PASSORFAIL
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int x = s.nextInt();
+		    int p = s.nextInt();
+		    int incorrect = n-x;
+		    int marks = (x*3)-incorrect; 
+		    if(marks >= p){
+		         System.out.println("PASS");
+		    }
+		    else{
+		        System.out.println("FAIL");
+		    }
+		}
+	}
+}
+
