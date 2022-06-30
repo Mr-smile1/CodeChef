@@ -1,0 +1,22 @@
+Problem Code:CHEFPAGES
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    if(a == 1 && b == 1){
+		        System.out.println("https://discuss.codechef.com");
+		    }
+		    else if(a == 1){
+		        System.out.println("https://www.codechef.com/contests");
+		    }
+		    else{
+		        System.out.println("https://www.codechef.com/practice");
+		    }
+	}
+}
+
