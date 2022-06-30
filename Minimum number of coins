@@ -9,8 +9,8 @@ class Codechef
 		int t = s.nextInt();
 		while(t-- > 0){
 		    int a = s.nextInt();
-		    int div = a/10;
-	        int rem = a%10;
+		    int div = a/10;       // 30/10 = 3
+	        int rem = a%10;       // 30%10 = 0
 	        int ans = -1;
 	        if(a%5!=0){
 	            ans=-1;
@@ -24,4 +24,5 @@ class Codechef
 		}
 	}
 }
+
 
