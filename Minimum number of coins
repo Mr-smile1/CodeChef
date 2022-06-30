@@ -1,0 +1,27 @@
+Problem Code:MINCOINS
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int div = a/10;
+	        int rem = a%10;
+	        int ans = -1;
+	        if(a%5!=0){
+	            ans=-1;
+	        }
+	        else{
+	            rem/=5;
+	            ans=div+rem;
+	        }
+	        
+	        System.out.println(ans);
+		}
+	}
+}
+
