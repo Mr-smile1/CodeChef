@@ -1,0 +1,19 @@
+Problem Code:CHESSDIST
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int xa = s.nextInt();
+		    int ya = s.nextInt();
+		    int xb = s.nextInt();
+		    int yb = s.nextInt();
+		    System.out.println(Math.max( Math.abs(xa - xb), Math.abs(ya - yb)));
+		}
+	}
+}
+
