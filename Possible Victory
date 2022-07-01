@@ -1,0 +1,22 @@
+Problem Code:T20MCH
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		    int r = s.nextInt();
+		    int o = s.nextInt();
+		    int c = s.nextInt();
+		    int toscore = r - c;
+		    int overleft = 20 - o;
+		    if(overleft*6*6 > toscore){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+	}
+}
+
