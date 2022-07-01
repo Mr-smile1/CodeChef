@@ -1,0 +1,16 @@
+Problem Code:TEST
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+		    int t = sc.nextInt();
+		    if(t != 42) System.out.println(t);
+		    else break;
+		}
+	}
+}
+
