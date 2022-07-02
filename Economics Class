@@ -1,0 +1,32 @@
+Problem Code:ECOCLASS
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int[] arrs = new int [n]; 
+		    for(int i=0;i<n;i++){
+		        arrs[i] = s.nextInt();
+		    }
+		    
+		    int[] arrd = new int [n];    
+		    for(int i=0;i<n;i++){
+		        arrd[i] = s.nextInt();
+		    }
+		    
+		    int count=0;;
+		    for(int i=0;i<n;i++){
+		        if(arrs[i] == arrd[i]){
+		            count++;
+		        }
+		    }
+		    System.out.println(count);
+		}
+	}
+}
+
