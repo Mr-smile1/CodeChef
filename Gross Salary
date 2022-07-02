@@ -1,0 +1,23 @@
+Problem Code:FLOW011
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		
+		    if(n >= 1500){
+		        System.out.println(n + 500 + (n*0.98));
+		    }
+		    else{
+		        System.out.println(n + (n*0.10) + (n*0.90));
+		    }
+		}
+	}
+}
+
+
