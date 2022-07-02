@@ -1,0 +1,26 @@
+Problem Code:GENE01
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		    char x = s.next().charAt(0);
+		    char y = s.next().charAt(0);
+
+            if(x == y){
+		        System.out.println(x);
+		    }
+		    else if(x == 'R' && y == 'B'){
+		        System.out.println("R");
+		    }
+		    else if(x == 'R' && y == 'G'){
+		        System.out.println("R");
+		    }
+            else if(x == 'G' && y == 'B'){
+		        System.out.println("B");
+		    }
+	}
+}
+
