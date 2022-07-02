@@ -1,0 +1,31 @@
+Problem Code:PRB01
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    
+		    // for all posibilities check if it divisible by any other num smaller to it
+		    int count=0;
+		    for(int i=2;i<=n;i++){        
+		        if(n%i==0){
+		            count++;
+		        }
+		    }
+
+		    if(count == 1){
+		        System.out.println("yes");
+		    }
+		    else{
+		        System.out.println("no");
+		    }
+		}
+	}
+}
+
+
