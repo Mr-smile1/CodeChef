@@ -1,0 +1,20 @@
+Problem Code:LAZYCHF
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int m = s.nextInt();
+		    int d = s.nextInt();
+		    int xm = x*m;    // 1*3 = 3, 1*1 = 1, 2*2 = 4
+		    int xd = x+d;    // 1+1 = 2, 1+0 = 1, 2+5 = 5
+		    System.out.println(Math.min(xm,xd));
+		}
+	}
+}
+
