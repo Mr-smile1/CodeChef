@@ -1,0 +1,30 @@
+Problem Code:BMI
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int m = s.nextInt();
+		    int h = s.nextInt();
+		    int bmi = m/(h*h);
+		    
+		    if(bmi <= 18){
+		        System.out.println(1);
+		    }
+		    else if(19 <= bmi && bmi <= 24){
+		        System.out.println(2);
+		    }
+		    else if(25 <= bmi && bmi <= 29){
+		        System.out.println(3);
+		    }
+		    else{
+		        System.out.println(4);
+		    }
+		}
+	}
+}
+
