@@ -20,6 +20,7 @@ class Codechef
 		    }
 		    else{
 		        System.out.println("Eq");
+		        System.out.println(peri);
 		    }
 	}
 }
