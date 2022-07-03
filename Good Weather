@@ -1,0 +1,38 @@
+Problem Code:GOODWEAT
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int[] arr = new int[7];
+		    
+		    for(int i=0;i<7;i++){
+		        arr[i] = s.nextInt();
+		    }
+            
+            int count0 = 0;
+            int count1 = 0;
+            
+            for(int i=0;i<7;i++){
+		        if(arr[i] == 0){
+		            count0++;
+		        }
+		        else{
+		            count1++;
+		        }
+		    }
+            
+		    if(count1 > count0){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
