@@ -1,0 +1,29 @@
+Problem Code:INCREAR
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+            
+            int count=0;
+            while(x != y){
+                if(x > y){
+    		        y+=2;
+    		        count++;
+		        }
+		        else{
+		            x+=1;
+		            count++;
+		        }
+            }
+            System.out.println(count);
+		}
+	}
+}
+
