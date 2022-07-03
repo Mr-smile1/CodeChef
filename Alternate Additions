@@ -1,0 +1,25 @@
+Problem Code:ALTERADD
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int x = b-a;
+		    
+		    if(x%3 == 2){
+		        System.out.println("NO");
+		    }
+		    else{
+		        System.out.println("YES");
+		    }
+		}
+	}
+}
+
+
