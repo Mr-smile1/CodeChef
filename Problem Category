@@ -1,0 +1,26 @@
+Problem Code:PROBCAT
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+
+		    if(1 <= x && x < 100){
+		        System.out.println("Easy");
+		    }
+		    else if(100 <= x && x < 200){
+		        System.out.println("Medium");
+		    }
+		    else{
+		        System.out.println("Hard");
+		    }
+		}
+	}
+}
+
+
