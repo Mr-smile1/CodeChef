@@ -1,0 +1,22 @@
+Problem Code:FLOW009
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    float q = s.nextInt();
+		    float p = s.nextInt();
+            if(q > 1000){
+                System.out.println((q*p) - (q*p*0.10));
+            }
+            else{
+                System.out.println(q*p);
+            }
+		}
+	}
+}
+
