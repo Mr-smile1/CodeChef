@@ -1,0 +1,21 @@
+Problem Code:EITA
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int d = s.nextInt();
+		    int x = s.nextInt(); //* 7
+		    int y = s.nextInt(); //* d + z * 7-d
+		    int z = s.nextInt();
+		    int X = x * 7;
+		    int Y = y * d + z * (7-d);
+		    System.out.println(Math.max(X,Y));
+		}
+	}
+}
+
