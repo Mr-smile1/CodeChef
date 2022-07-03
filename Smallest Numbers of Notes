@@ -1,0 +1,23 @@
+Problem Code:FLOW005
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+
+            int hun = n%100;     // 242 % 100 = 42
+            int fif = hun%50;    //  42 %  50 = 42
+            int ten = fif%10;    //  42 %  10 = 2
+            int fiv = ten%5;     //   2 %   5 = 2
+            int two = fiv%2;     //   2 %   2 = 0
+            System.out.println(n/100 + hun/50 + fif/10 + ten/5 + fiv/2 + two/2 + two);
+                             // 2    +    0   +    4   +    0  +    1  +   0   +  0 = 7 
+		}
+	}
+}
+
