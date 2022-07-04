@@ -1,0 +1,30 @@
+Problem Code:UTKPLC
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    char a = s.next().charAt(0);
+		    char b = s.next().charAt(0);
+		    char c = s.next().charAt(0);
+            
+            char x = s.next().charAt(0);
+            char y = s.next().charAt(0);
+            
+		    if(a == x || a == y){
+		        System.out.println(a);
+		    }
+		    else if(b == x || b == y){
+		        System.out.println(b);
+		    }
+		    else{
+		        System.out.println(c);
+		    }
+		}
+	}
+}
+
