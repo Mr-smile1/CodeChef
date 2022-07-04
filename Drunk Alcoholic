@@ -1,0 +1,49 @@
+Problem Code:DRUNKALK
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int k = s.nextInt();
+
+		    if(k%2==0){
+		        System.out.println(k);
+		    }
+		    else{
+		        System.out.println(k+2);
+		    }
+		}
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int k = s.nextInt();
+            
+            int count=0;
+		    for(int i=1;i<=k;i++){
+		        if(i%2==1){
+		            count+=3;
+		        }
+		        else{
+		            count--;
+		        }
+		    }
+		    System.out.println(count);
+		}
+	}
+}
+
