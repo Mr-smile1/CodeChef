@@ -1,0 +1,43 @@
+Problem Code:CHFRICH
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int x = s.nextInt();
+            
+		    System.out.println((b-a) / x);
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int x = s.nextInt();
+            
+            int count=0;
+		    while(a <= b){
+		        a += x;
+		        count++;
+		    }
+		    System.out.println(count-1);
+		}
+	}
+}
+Richie Rich
