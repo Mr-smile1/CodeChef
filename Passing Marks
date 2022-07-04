@@ -1,0 +1,29 @@
+Problem Code:PSGRADE
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int z = s.nextInt();
+		    int tmin = s.nextInt();
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int c = s.nextInt();
+		    
+		    int entry = y*z;
+		    if(a >= x && b >= y && c >= z && a+b+c >= tmin){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
