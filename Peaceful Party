@@ -1,0 +1,27 @@
+Problem Code:MAYOR_PARTY
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int z = s.nextInt();
+		    if(y > x+z){
+		        System.out.println(y);
+		    }
+		    else if(y < x+z){
+		        System.out.println(x+z);
+		    }
+		    else{
+		        System.out.println(y);
+		    }
+		}
+	}
+}
+
+
