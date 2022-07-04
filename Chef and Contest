@@ -1,0 +1,31 @@
+Problem Code:CHEFCONTEST
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int p = s.nextInt();
+		    int q = s.nextInt();
+
+            int penchef = p*10;
+            int penchefina = q*10;
+
+		    if(x + penchef < y + penchefina){
+		        System.out.println("Chef");
+		    }
+		    else if(x + penchef > y + penchefina){
+		        System.out.println("Chefina");
+		    }
+		    else{
+		        System.out.println("Draw");
+		    }
+		}
+	}
+}
+
