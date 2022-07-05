@@ -27,3 +27,25 @@ class Codechef
 }
 
 
+////////////////////////////////////////////////////////////////////////////
+
+
+class Codechef
+{
+    public static int fact(int n){
+        return n * fact(n-1);
+    }
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int k = s.nextInt();
+
+		    System.out.println(fact(n) / fact(n-k) . fact(K));
+		}
+	}
+}
+
