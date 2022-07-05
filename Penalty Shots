@@ -1,0 +1,47 @@
+Problem Code:PENALTY
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int[] arr = new int[10];
+		    for(int i=0;i<10;i++){
+		        arr[i] = s.nextInt();
+		    }
+		    
+		    int team1=0;
+		    int team2=0;
+		    for(int i=0;i<10;i++){
+		        if(i%2!=0 && arr[i] == 1){         //odd
+                    team1++;
+		        }
+		        else if(i%2==0 && arr[i] == 1){    //even
+		            team2++;
+		        }
+		    }
+		    
+		        /*
+            System.out.println("////////////start");
+            System.out.println(team1);
+            System.out.println(team2);
+            System.out.println("////////////end");
+            */
+            
+            if(team1 > team2){
+                System.out.println("2");
+            }
+            else if(team1 < team2){
+                System.out.println("1");
+            }
+            else{
+                System.out.println("0");
+            }
+		}
+	}
+}
+
+
