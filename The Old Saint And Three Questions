@@ -1,0 +1,41 @@
+Problem Code:THREEQ
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int[] arr1 = new int[3];
+		    int[] arr2 = new int[3];
+		    
+            for(int i=0;i<3;i++){
+                arr1[i] = s.nextInt();
+            }
+            for(int i=0;i<3;i++){
+                arr2[i] = s.nextInt();
+            }
+            
+            int count1 = 0;
+            int count2 = 0;
+            for(int i=0;i<3;i++){
+                if(arr1[i] == 1){
+                    count1++;
+                }
+                if(arr2[i] == 1){
+                    count2++;
+                }
+            }
+            
+		    if(count1 == count2){
+		        System.out.println("Pass");
+		    }
+		    else{
+		        System.out.println("Fail");
+		    }
+		}
+	}
+}
+
