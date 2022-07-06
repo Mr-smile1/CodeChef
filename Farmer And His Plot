@@ -1,0 +1,26 @@
+Problem Code:RECTSQ
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int m = s.nextInt();
+            int a = n;
+            int b = m;
+            while(b > 0){
+                int r = b;
+                b = a%b;
+                a = r;
+            }
+            
+		    System.out.println((n*m) / (a*a));
+		}
+	}
+}
+
+
