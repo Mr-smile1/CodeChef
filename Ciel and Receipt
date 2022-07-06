@@ -1,0 +1,29 @@
+Problem Code:CIELRCPT
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int p = s.nextInt();
+            int n = 11;
+            int count=0;
+
+		    while(n >= 0){
+		        if(p >= Math.pow(2,n) && p > 0){
+		            p -= Math.pow(2,n);
+		            count++;
+		        }
+		        else{
+		            n--;
+		        }
+		    }
+		    System.out.println(count);
+		}
+	}
+}
+
+
