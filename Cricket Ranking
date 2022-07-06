@@ -1,0 +1,40 @@
+Problem Code:CRICRANK
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		   int[] a = new int[3];
+		   int[] b = new int[3];
+		   for(int k =0; k < 3 ;k++){
+		       a[k] = s.nextInt();
+		      
+		   }
+		   for(int l =0; l < 3 ;l++){
+		    b[l] = s.nextInt();
+		   }
+		   int count1 = 0;
+		   int count2 = 0;
+		   for(int m =0; m < 3; m++){
+		       if(a[m] > b[m]){
+		           count1++;
+		       }
+		       else{
+		           count2++;
+		       }
+		   }
+		   if(count1 > count2){
+		       System.out.println("A");
+		   }
+		   else{
+		       System.out.println("B");
+		   }
+		}
+	}
+}
+
+
