@@ -1,0 +1,28 @@
+Problem Code:VDATES
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int d = s.nextInt();
+		    int l = s.nextInt();
+		    int r = s.nextInt();
+
+		    if(d < l){
+		        System.out.println("Too Early");
+		    }
+		    else if(d >= l && d <= r){
+		        System.out.println("Take second dose now");
+		    }
+		    else{
+		        System.out.println("Too Late");
+		    }
+		}
+	}
+}
+
+
