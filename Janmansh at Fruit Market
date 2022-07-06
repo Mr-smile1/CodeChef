@@ -1,0 +1,26 @@
+Problem Code:JMARKET
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int c = s.nextInt();
+
+		    int minval = Math.min(a, Math.min(b,c));
+		    int midval = a+b+c - Math.min(a, Math.min(b,c)) - Math.max(a, Math.max(b,c));
+		    int maxval = Math.max(a, Math.max(b,c));
+		    
+		    int total = (x-1)*minval + midval;
+		    System.out.println(total);
+		}
+	}
+}
+
+
