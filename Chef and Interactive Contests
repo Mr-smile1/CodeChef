@@ -1,0 +1,23 @@
+Problem Code:CHFINTRO
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int r = s.nextInt();
+		while(n-- > 0){
+		    int R = s.nextInt();
+                if(R < r){
+                    System.out.println("Bad boi");
+                }
+                else{
+		            System.out.println("Good boi");
+		        }
+		}
+	}
+}
+
+
