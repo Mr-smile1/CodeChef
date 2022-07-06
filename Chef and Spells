@@ -1,0 +1,22 @@
+Problem Code:CHFSPL
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int z = s.nextInt();
+
+		    int max = Math.max(x, Math.max(y,z));
+		    int max2 = x+y+z - Math.max(x, Math.max(y,z)) - Math.min(x, Math.min(y,z));
+		    System.out.println(max + max2);
+		}
+	}
+}
+
+
