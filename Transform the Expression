@@ -1,0 +1,35 @@
+Problem Code:ONP
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    String st = s.next();
+		    String res = "";
+		    Stack<Character> stk = new Stack<>();
+		    for(int i=0;i<st.length();i++){
+		        if(st.charAt(i) >= 'a' && st.charAt(i) <= 'z'){
+		            res += st.charAt(i);
+		        }
+		        else if(st.charAt(i) == '('){
+		            stk.push('(');
+		        }
+		        else if(st.charAt(i) == ')'){
+		            while(stk.lastElement() != '('){
+		                res += stk.pop();          // added the popped value to res 
+		            }
+		            stk.pop();                     // finally popping it
+		        }
+		        else{
+		            stk.push(st.charAt());
+ 		        }
+		    }
+		    System.out.println(res);
+		}
+	}
+}
+
