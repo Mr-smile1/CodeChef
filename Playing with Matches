@@ -1,0 +1,27 @@
+Problem Code:MATCHES
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int arr[] = {6,2,5,5,4,5,6,3,7,6};
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+            int sum = a+b;
+            
+            int count = 0;
+		    while(sum > 0){
+		        int rem = sum%10;
+		        sum/=10;
+		        count += arr[rem];
+		    }
+		    System.out.println(count);
+		}
+	}
+}
+
+
