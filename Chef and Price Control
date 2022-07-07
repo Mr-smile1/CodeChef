@@ -1,0 +1,31 @@
+Problem Code:PRICECON
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner  s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int k = s.nextInt();
+		    
+		    int before = 0;
+		    int after = 0;
+		    for(int i=0;i<n;i++){
+		        int val = s.nextInt();
+		        before += val;
+		        if(val > k){
+		            after += k;
+		        }
+		        else{
+		            after+= val;
+		        }
+		    }
+            System.out.println(before - after);
+		}
+	}
+}
+
+
