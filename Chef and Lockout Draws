@@ -1,0 +1,27 @@
+Problem Code:LOCKDRAW
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int c = s.nextInt();
+		    int ab = a+b;
+		    int bc = b+c;
+		    int ac = a+c;
+
+		    if((a == bc) || (b == ac) || (c == ab)){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
