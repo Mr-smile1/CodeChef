@@ -1,0 +1,26 @@
+Problem Code:BOMBTHEBASE
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int x = s.nextInt();
+            
+            int count=0;
+            for(int i=0;i<n;i++){
+                int des = s.nextInt();
+                if(des < x){
+                    count = i+1;
+                }
+            }
+            
+		    System.out.println(count);
+		}
+	}
+}
+
