@@ -1,0 +1,37 @@
+Problem Code:PERMUT2
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t != 0){
+		    
+		    int[] arr = new int[t];
+		    int[] brr = new int[t];
+		    for(int i=0;i<t;i++){
+		        arr[i] = s.nextInt();
+		    }
+		    
+		    // 1 2 3 4
+		    // 1 4 3 2 
+		    
+		    for(int i=0;i<t;i++){
+		        brr[(arr[i])-1] = i+1;   
+		    }
+		    
+		    if(Arrays.equals(arr, brr)){
+		        System.out.println("ambiguous");
+		    }  
+		    else{
+		        System.out.println("not ambiguous");
+		    }
+		    
+		    t = s.nextInt();
+		}
+	}
+}
+
+
