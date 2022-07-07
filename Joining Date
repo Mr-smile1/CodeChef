@@ -1,0 +1,36 @@
+Problem Code:JOINING
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int k = s.nextInt();
+		     // int  total = (n/5) + (n%5 ? 0:1);
+	         //int unaffected = (k/5) + (k%5 ? 0:1);
+	        int total , unaffected;
+	        if(n%5==0){
+	            total=n/5;
+	        }
+	        else{
+	            total= n/5 + 1;
+	        }
+	            
+	        if(k%5==0){
+	            unaffected=k/5;
+	        }
+	        else{
+	            unaffected= k/5 + 1;
+	        }
+
+	        int affected = total - unaffected;
+	         
+	        System.out.println(affected);
+		}
+	}
+}
+
