@@ -1,0 +1,29 @@
+Problem Code:WATSCORE
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner hh = new Scanner(System.in);
+		int t = hh.nextInt();
+		while(t-- > 0){
+		    int n = hh.nextInt();
+		    
+		    int arr[] = new int[12];
+		    for (int i=0; i<n ; i++ ){
+		        int p = hh.nextInt();
+		        int s = hh.nextInt();
+		        arr[p] = Math.max(arr[p], s);
+		    } 
+		    
+		    int score = 0;
+		    for (int i=1; i<= 8 ; i++ ){
+		        score += arr[i];
+		    } 
+		    System.out.println(score);
+		}
+	}
+}
+
+
