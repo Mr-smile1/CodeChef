@@ -1,0 +1,27 @@
+Problem Code: CHEFCAND
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner hh = new Scanner(System.in);
+		int t = hh.nextInt();
+		while(t-- > 0){
+		    int n = hh.nextInt();
+		    int x = hh.nextInt();
+		    int needed = n-x;
+		    
+		    if(x >= n){
+		        System.out.println(0);
+		    }
+		    else if(needed%4==0){
+		        System.out.println(needed/4);
+		    }
+		    else{
+		        System.out.println((needed/4) + 1);
+		    }
+		}
+	}
+}
+
