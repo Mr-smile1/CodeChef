@@ -1,0 +1,39 @@
+Problem Code:PROC18A
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int k = s.nextInt();
+		    int total = 0;
+		    
+		    int arr[] = new int[n];
+		    for (int i=0; i<n ; i++ ){
+		        arr[i] = s.nextInt();
+		        total += arr[i]; 
+		    } 
+		    
+		    if(n == k){                              // sum of all values
+		        System.out.println(total);
+		        break;
+		    }
+		    
+		    int max = 0;                             // for a subset,  we just traverse through the array using sliding window
+		    for(int i=0;i<=n-k;i++){
+		        int sum = 0;
+		        for(int j=i;j<i+k;j++){
+		            sum += arr[j];
+		        }
+		        max = Math.max(max, sum);
+		    }	
+		    System.out.println(max);
+		}
+	}
+}
+
+
