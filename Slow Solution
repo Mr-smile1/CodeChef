@@ -1,0 +1,37 @@
+Problem Code: SLOWSOLN
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner hh = new Scanner(System.in);
+		int t = hh.nextInt();
+		while(t-- > 0){
+		    int mt = hh.nextInt();
+		    int mn = hh.nextInt();
+		    int sn = hh.nextInt();
+		    
+		    int val = (int)Math.ceil(sn/(float)mn);
+		    int test = Math.min(mt,val);
+		    
+		    //System.out.println(test);
+		    int res = 0;
+		    while(test-- > 0){
+		        int x = 0;
+		        if(sn >= mn){   //2200 >= 1000
+		            x = mn;     //1000 ,1000
+		            sn -= mn;   //2200 - 1000 = 1200 - 1000 = 200
+		        }
+		        else{           //200
+		            x = sn;
+		        }
+
+		        res += (x*x);   // 1000^2 + 1000^2 + 200^2
+		    }
+
+		    System.out.println(res);
+		}
+	}
+}
+
