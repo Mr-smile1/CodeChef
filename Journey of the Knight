@@ -1,0 +1,27 @@
+Problem Code: KNIGHT2
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x1 = s.nextInt();
+		    int y1 = s.nextInt();
+		    int x2 = s.nextInt();
+		    int y2 = s.nextInt();
+		    int xy1 = x1+y1;          // if odd/even
+		    int xy2 = x2+y2;          // if odd/even
+		    
+		    if((xy1 - xy2) % 2 == 0){       //this will be even
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
