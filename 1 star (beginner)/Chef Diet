@@ -1,0 +1,48 @@
+Problem Code:DIET
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		for(int i=0; i<t; i++)
+		{
+		    int n = sc.nextInt();
+		    int k = sc.nextInt();
+		    
+		    ArrayList<Integer> arr = new ArrayList<>();
+		    for(int j=0; j<n; j++)
+		    {
+		        int ele = sc.nextInt();
+		        arr.add(ele);
+		    }
+		    
+		    int rem = 0;
+		    int flag = 0;
+		    for(int l=0; l<n; l++)
+		    {
+		        int temp = arr.get(l) + rem;
+		        if(temp < k)
+		        {
+		            flag = l+1;
+		            break;
+		        }
+		        else
+		        {
+		            rem = temp-k;
+		        }
+		    }
+		    if(flag == 0)
+		    {
+		        System.out.println("YES");
+		    }
+		    else
+		    {
+		        System.out.println("NO "+flag);
+		    }
+		}
+	}
+}
+
