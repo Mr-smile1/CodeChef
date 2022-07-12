@@ -1,0 +1,41 @@
+Problem Code:EVENTUAL
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    String str = s.next();
+			int count=0;
+			boolean flag=true;
+			for(int i=0;i<n;i++)
+			{
+				count=0;
+				for(int j=0;j<n;j++)
+				{
+					if(str.charAt(i)==str.charAt(j))
+						count++;
+				}
+				if(count%2==0)
+				{
+					continue;
+				}
+				else 
+				{
+					System.out.println("NO");
+					flag=false;
+				    break;
+				}
+			}
+			if(flag)
+				System.out.println("YES");
+		
+		}
+	}
+}
+
+
