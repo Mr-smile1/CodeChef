@@ -1,0 +1,31 @@
+Problem Code:SNAKPROC
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s=new Scanner(System.in);
+		int t=s.nextInt();
+		while(t-->0){
+		    int n=s.nextInt();
+		    String st=s.next();
+		    int c=0;
+		    int f=0;
+		    for(int i=0;i<n;i++){
+		        if(st.charAt(i)=='H')
+		           c++;
+		        if(st.charAt(i)=='T')
+		          c--;
+		        if(c<0 || c>1){
+		            f=1;
+		          break;
+		        }
+		    }
+		    if(f==1 || c!=0)
+		      System.out.println("Invalid");
+		    else
+		      System.out.println("Valid");
+		}
+	}
+}
