@@ -1,0 +1,35 @@
+Problem Code:TABLET
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int b = s.nextInt();
+		    
+		    int max = 0;
+
+		    for(int i=0;i<n;i++){
+		        int w = s.nextInt();
+		        int h = s.nextInt();
+		        int p = s.nextInt();
+		        
+		        int val = w*h;
+		        
+		        if(val > max && p <= b){
+		            max = val;
+		        }
+		    }
+		    if(max == 0){
+		        System.out.println("no tablet");
+		    }
+		    else{
+		        System.out.println(max);
+		    }
+		}
+	}
+}
