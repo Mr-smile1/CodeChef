@@ -1,0 +1,24 @@
+Problem Code:BREAKSTICK
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-- > 0){
+		    int n = sc.nextInt();
+		    int x = sc.nextInt();
+            
+		    if(x%2==0 && n%2!=0){          //x is even and n is not even
+		        System.out.println("NO");
+		    }
+		    else{
+		        System.out.println("YES");
+		    }
+		}
+	}
+}
+
+
