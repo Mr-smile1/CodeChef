@@ -1,0 +1,31 @@
+Problem Code:ATTENDU
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int left = 120-n;
+		    String st = s.next();
+
+		    int present = 0;
+		    for(int i=0;i<n;i++){
+		        if(st.charAt(i) == '1'){
+		            present++;
+		        }
+		    }
+		    
+		    if(left + present >= 90){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
