@@ -1,0 +1,29 @@
+Problem Code:WEIGHTBL
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int w1 = s.nextInt();
+		    int w2 = s.nextInt();
+		    int x1 = s.nextInt();
+		    int x2 = s.nextInt();
+		    int m = s.nextInt();
+		    int w = w2 - w1;
+		    int xl = x1*m;
+		    int xh = x2*m;
+		    
+		    if(w >= xl && w <= xh){
+		        System.out.println("1");
+		    }
+		    else{
+		        System.out.println("0");
+		    }
+		}
+	}
+}
+
