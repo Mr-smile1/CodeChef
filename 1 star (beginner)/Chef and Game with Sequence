@@ -1,0 +1,31 @@
+Problem Code:L56GAME
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    
+		    int sum = 0;
+		    for(int i=0;i<n;i++){
+		        int val = s.nextInt();
+		        sum+=val;
+		    }
+		    
+		    if(n == 1){
+		        System.out.println(1);
+		    }
+		    else if(sum%2==0){
+		        System.out.println(1);
+		    }
+		    else{
+		        System.out.println(2);
+		    }
+		}
+	}
+}
+
