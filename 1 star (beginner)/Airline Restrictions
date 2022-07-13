@@ -1,0 +1,32 @@
+Problem Code:AIRLINE
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int c = s.nextInt();
+		    int d = s.nextInt();
+		    int e = s.nextInt();
+		    
+		    if(a+b <= d && c <= e){
+		        System.out.println("yes");
+		    }
+		    else if(b+c <= d && a <= e){
+		        System.out.println("yes");
+		    }
+		    else if(a+c <= d && b <= e){
+		        System.out.println("yes");
+		    }
+		    else{
+		        System.out.println("no");
+		    }
+		}
+	}
+}
+
