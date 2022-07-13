@@ -1,0 +1,33 @@
+Problem Code:ELEVSTRS
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int v1 = s.nextInt();    // stairs
+		    int v2 = s.nextInt();    // elevator
+		    
+		    // t = d/v;  ( s = d/t )
+            
+            double d1 = n * 1.414;
+            double d2 = 2 * n;
+            
+            double t1 = d1/v1;
+            double t2 = d2/v2;
+            
+            if(t1 >= t2){
+                System.out.println("Elevator");
+            }
+            else{
+                System.out.println("Stairs");
+            }
+		}
+	}
+}
+
+
