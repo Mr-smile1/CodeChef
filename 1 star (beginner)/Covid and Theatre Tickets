@@ -1,0 +1,35 @@
+Problem Code:COVID_19
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int m = s.nextInt();
+		    
+		    int x = 0;
+		    int y = 0;
+		    		    
+		    if(n%2 == 1){
+		        x = (n/2)+1;
+		    }
+		    else{
+		        x = n/2;
+		    }
+		    
+		    if(m%2 == 1){
+		        y = (m/2)+1;
+		    }
+		    else{
+		        y = m/2;
+		    }
+		    
+		    System.out.println(x*y);
+		}
+	}
+}
+
