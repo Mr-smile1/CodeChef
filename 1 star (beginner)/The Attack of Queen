@@ -1,0 +1,28 @@
+Problem Code:QUEENATTACK
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    
+		    int hori = n-1;
+		    int verti = n-1;
+		    int diagonal = 0;
+		                                       // n = 150, x = 62, y = 41
+		    diagonal += Math.min(x-1, y-1);    // 61, 40
+		    diagonal += Math.min(n-x, n-y);    // 88, 109
+		    diagonal += Math.min(n-x, y-1);    // 88, 40
+		    diagonal += Math.min(x-1, n-y);    // 61, 109
+		    
+		    System.out.println(hori+verti+diagonal);
+		}
+	}
+}
+
