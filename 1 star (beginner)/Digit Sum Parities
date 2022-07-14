@@ -1,0 +1,41 @@
+Problem Code:DIGSMPAR
+
+
+class Codechef
+{
+    
+    static int sum(int n){
+	    int total=0;
+	    while(n>0){
+	        total += n%10;
+	        n=n/10;
+	    }
+	    return total;
+	}
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    
+		    int total=sum(n);
+		    int i=0;
+		    if(total%2==0){
+		        while(total%2==0){
+		            total=sum(n+(++i));
+		        }
+		        System.out.println(n+i);
+		    }
+		    else{
+		        while(total%2!=0){
+		            total=sum(n+(++i));
+		        }
+		        System.out.println(n+i);
+		    }
+		}
+	}
+}
+
+
