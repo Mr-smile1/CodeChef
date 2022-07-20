@@ -1,0 +1,41 @@
+Problem Code:EZSPEAK
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner hh = new Scanner(System.in);
+		int t = hh.nextInt();
+		while(t-- > 0){
+		    int n = hh.nextInt();
+		    String st = hh.next();
+		    
+		    HashSet<Character> set = new HashSet<>();
+		    set.add('a');
+		    set.add('e');
+		    set.add('i');
+		    set.add('o');
+		    set.add('u');
+		    
+		    int count = 0;
+		    for(int i=0;i<n;i++){
+		        if(!set.contains(st.charAt(i))){
+		            count++;
+		        }
+		        else{
+		            count=0;
+		        }
+		        if(count >= 4){
+		            System.out.println("NO");
+		            break;
+		        }
+		    }
+		    if(count < 4){
+		        System.out.println("YES");
+		    }
+		}
+	}
+}
+
+
