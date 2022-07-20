@@ -1,0 +1,36 @@
+Problem Code:DANOW
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int q = s.nextInt();
+		
+		double arr[] = new double[n];
+		double brr[] = new double[n];
+		
+		for(int i=0;i<n;i++){
+		    arr[i] = Math.abs(s.nextDouble());
+		}
+		
+		for(int i=0;i<n;i++){
+		    brr[i] = Math.abs(s.nextDouble());
+		}
+		
+		while(q-- > 0){
+		    int l = s.nextInt();
+		    int r = s.nextInt();
+		    
+		    long sum = 0;
+		    for(int i=l-1;i<r;i++){
+		        sum += (long)arr[i]*brr[i];
+		    }
+		    System.out.println(sum);
+		}
+	}
+}
+
+
