@@ -1,0 +1,35 @@
+Problem Code:BURGERS2
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int n = s.nextInt();
+		    int r = s.nextInt();
+		    
+		    int numy = n;
+		    int numx = 0;
+		    while(numy >= 0){
+		        if(x*n > r){
+		            System.out.println(-1);
+		            break;
+		        }
+		        else if(x*numx + y*numy <= r){     //4*1(4) + 8*9(56) = 60
+		            System.out.println(numx + " " + numy);
+		            break;
+		        }
+		        else{
+		            numy--;
+		            numx++;
+		        }
+		    }
+		}
+	}
+}
+
