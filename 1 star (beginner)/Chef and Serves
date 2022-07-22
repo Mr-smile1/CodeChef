@@ -1,0 +1,26 @@
+Problem Code:CHSERVE
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int p1 = s.nextInt();
+		    int p2 = s.nextInt();
+		    int k = s.nextInt();
+		    
+		    int sum = p1+p2;
+		    if((sum/k)%2==0){
+		        System.out.println("CHEF");
+		    }
+		    else{
+		        System.out.println("COOK");
+		    }
+		}
+	}
+}
+
+
