@@ -1,0 +1,44 @@
+Problem Code:DIF_GCD
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int m = s.nextInt();
+		    
+		    int res1=0;
+		    int res2=0;
+		    
+		    if(m < n*2){
+		        System.out.println(m+" "+m);
+		    }
+		    else if (m >= n*2 && m%n == 0){
+		        System.out.println(m+" "+n);
+		    }
+		    else{
+		        int val = m/2;
+		        if(m >= n*2){
+		            val=2*n;
+		        }
+		        int diff=Integer.MIN_VALUE;
+		        for(int i=n;i<=val;i++){
+		            int d = m/i;
+		            int curdif=(i*d)-i;
+		            if(curdif>diff){
+		                res1=i;
+		                res2=i*d;
+		                diff=curdif;
+		            }
+		        }
+		        System.out.println(res1+" "+ res2);
+		    }
+		}
+	}
+}
+
+
