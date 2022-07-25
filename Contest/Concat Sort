@@ -1,0 +1,59 @@
+Problem Code:CONCATSORT
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int arr[] = new int[n];
+		    
+		    for(int i=0;i<n;i++){
+		        arr[i] = s.nextInt();
+		    }
+		    
+		    int idx=-1;
+		    int val=-1;
+		    for(int i=0;i<n;i++){
+		        if(arr[i] > arr[i+1]){
+		            idx=i+1;
+		            val=arr[idx];
+		            break;
+		        }
+		    }
+		    if(idx == -1 || idx == n-1){
+		        System.out.println("YES");
+		        continue;
+		    }
+		    int lmax=0;
+		    for(int i=0;i<idx;i++){
+		        if(arr[i] > val){
+		            lmax = arr[i];
+		            break;
+		        }
+		    }
+		    int rmax= arr[idx-1];
+		    int i;
+		    for(i=idx+1;i<n;i++){
+		        if(arr[i] >= rmax){
+		            rmax = arr[i];
+		        }
+		        else if(arr[i] <= lmax && arr[i] >= val){
+		            val = arr[i];
+		        }
+		        else{
+		            System.out.println("NO");
+		            break;
+		        }
+		    }
+		    if(i==n){
+		        System.out.println("YES");
+		    }
+		}
+	}
+}
+
+
