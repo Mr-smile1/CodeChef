@@ -1,0 +1,31 @@
+Problem Code:SUMOFPROD1
+
+
+class Codechef
+{
+  public static void main (String[] args) throws java.lang.Exception
+  {
+    // your code goes here
+    Scanner s =new Scanner(System.in);
+    int t = s.nextInt();
+    while(t-->0){
+        int n = s.nextInt();
+        long count=0;
+        long ans=0;
+        
+        for(int i=0;i<n;i++){
+            int temp = s.nextInt();
+            if(temp==1){
+                count++;
+            }
+            else{
+                ans+=(count*(count+1)/2);
+                count=0;
+            }
+        }
+        ans+=(count*(count+1)/2);
+        System.out.println(ans);
+    }
+  }
+}
+
