@@ -1,0 +1,39 @@
+Problem Code:DIVAB
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int a = s.nextInt();
+		    int b = s.nextInt();
+		    int n = s.nextInt();
+		    
+		    if(a%b==0){
+		        System.out.println(-1);
+		    }
+		    
+		    else{
+		        if(n%a==0){
+		            int temp = n/a;
+		            if(n%b==0){
+		                temp++;
+		            }
+		            System.out.println(temp*a);
+		        }
+		        else if(n%a!=0){
+		            int temp=n/a;
+		            temp++;
+		            if((temp*a)%b==0){
+		                temp++;
+		            }
+		            System.out.println(temp*a);
+		        }
+		    }
+		}
+	}
+}
+
