@@ -15,6 +15,42 @@ class Codechef
 		    
 		    int numy = n;
 		    int numx = 0;
+		    
+		    if((r/y)>=n){
+		        System.out.println(0+" "+n);
+		    }
+		    else if ((r/x)<n){
+		        System.out.println(-1);
+		    }
+		    else{
+		        int val = (r-(y*n))/(x-y);
+		        if((r-(y*n))%(x-y)!=0){
+		            val+=1;
+		        }
+		        System.out.println(val+" "+ (n-val));
+		    }
+		}
+	}
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int x = s.nextInt();
+		    int y = s.nextInt();
+		    int n = s.nextInt();
+		    int r = s.nextInt();
+		    
+		    int numy = n;
+		    int numx = 0;
 		    while(numy >= 0){
 		        if(x*n > r){
 		            System.out.println(-1);
