@@ -1,0 +1,55 @@
+Problem Code:CHEGLOVE
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int arr[] = new int[n];
+		    int brr[] = new int[n];
+		    int crr[] = new int[n];
+		    
+		    for (int i=0; i<n; i++){
+		        arr[i] = s.nextInt();
+		    } 
+		    
+		    for (int i=0; i<n; i++){
+		        brr[i] = s.nextInt();
+		    } 
+		    
+		    int flag1=1;
+		    int flag2=1;
+		    for(int i=0;i<n;i++){
+		        if(arr[i]>brr[i]){
+		            flag1=0;
+		        }
+		    }
+		    
+		    for(int i=0, j=n-1;i<n && j>=0;i++,j--){
+		        if(arr[i]>brr[j]){
+		            flag2=0;
+		        }
+		    }
+		    
+		    if(flag1==1 && flag2==1){
+	                System.out.println("both");
+	            }
+	            else if(flag1==1 && flag2==0){
+	                System.out.println("front");
+	            }
+	            else if(flag1==0 && flag2==1){
+	                System.out.println("back");
+	            }
+	            else{
+	                System.out.println("none");
+	            }
+		    
+		}
+	}
+}
+
+
