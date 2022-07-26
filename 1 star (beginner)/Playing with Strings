@@ -1,0 +1,44 @@
+Problem Code:PLAYSTR
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    String a = s.next();
+		    String b = s.next();
+		    
+		    int azero = 0;
+		    int aone = 0;
+		    int bzero = 0;
+		    int bone = 0;
+		    
+		    for(int i=0;i<n;i++){
+		        if(a.charAt(i) == '0'){
+		            azero++;
+		        }
+		        else if(a.charAt(i) == '1'){
+		            aone++;
+		        }
+		        if(b.charAt(i) == '0'){
+		            bzero++;
+		        }
+		        else{
+		            bone++;
+		        }
+		    }
+		    if(azero == bzero && aone == bone){
+		        System.out.println("YES");
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		}
+	}
+}
+
+
