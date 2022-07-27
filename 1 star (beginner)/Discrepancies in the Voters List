@@ -1,0 +1,35 @@
+Problem Code:VOTERS
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		    int n1 = s.nextInt();
+		    int n2 = s.nextInt();
+		    int n3 = s.nextInt();
+		    
+		    int d=n1+n2+n3;
+		     
+		    int [] res = new int[d];
+            ArrayList<Integer> arr = new ArrayList<>();
+
+            for (int i = 0; i < d; i++) {
+                res[i] = s.nextInt();
+            }
+            
+            Arrays.sort(res);
+            for(int i=0; i<d-1; i++){
+                if(res[i] == res[i+1]){
+                    arr.add(res[i]);
+                    i++;   //to avoid third repetation
+                }
+            }
+            System.out.println(arr.size());
+            for (Integer integer : arr) {
+                System.out.println(integer);
+            }    
+	}
+}
+
