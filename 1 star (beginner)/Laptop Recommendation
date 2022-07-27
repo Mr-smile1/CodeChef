@@ -1,0 +1,44 @@
+Problem Code:LAPTOPREC
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner hh = new Scanner(System.in);
+		int t = hh.nextInt();
+		while(t-- > 0) {
+		    HashMap<Integer,Integer> h = new HashMap<Integer,Integer>();
+		    int n = hh.nextInt();
+		    while(n-- >0 ){
+		        int r = hh.nextInt();
+		        if(h.containsKey(r)){
+		            int val = h.get(r);
+		            val++;
+		            h.put(r,val);
+		        } else {
+		            h.put(r,1);
+		        }
+		    }
+		    int max = 0;
+		    int key = -1;
+		    int count = 0;
+		    for(Integer i : h.keySet()) {
+		        if(max < h.get(i)) {
+		            max = h.get(i);
+		            count = 1;
+		            key = i;
+		        } else if(max == h.get(i)) {
+		            count++;
+		        }
+		        
+		    }
+		    if(count == 1) 
+		    System.out.println(key);
+		    else
+		    System.out.println("CONFUSED");
+		}
+	}
+}
+
+
