@@ -1,0 +1,24 @@
+Problem Code:ICL1902
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    
+		    int count = 0;
+		    
+		    while(n > 0){
+		        int a = (int)Math.sqrt(n);     //    sqrt(85) = 9, sqrt(4) = 2
+		        n -= a*a;                      // n = 85 - 81 = 4, n = 4 - 4 = 0
+		        count++;
+		    }
+		    System.out.println(count);
+		} 
+	}
+}
+
