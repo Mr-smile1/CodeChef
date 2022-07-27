@@ -1,0 +1,22 @@
+Problem Code:CHEFSOCK
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		    int jc = s.nextInt();
+		    int sc = s.nextInt();
+		    int m = s.nextInt();
+		    
+		    if(((m - jc)/sc) % 2 == 0){
+		        System.out.println("Lucky Chef");
+		    } 
+		    else{
+		        System.out.println( "Unlucky Chef");
+		    }
+	}
+}
+
+
