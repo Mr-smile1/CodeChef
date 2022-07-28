@@ -1,0 +1,24 @@
+Problem Code:KOL15A
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    String st = s.next();
+		    
+		    int sum = 0;
+		    for(int i=0;i<st.length();i++){
+		        if(Character.isDigit(st.charAt(i))){
+		            sum+=Character.getNumericValue(st.charAt(i));
+		        }
+		    }
+		    
+		    System.out.println(sum);
+		}
+	}
+}
+
