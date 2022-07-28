@@ -1,0 +1,32 @@
+Problem Code:TSTROBOT
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int x = s.nextInt();
+		    String st = s.next();
+		    
+		    HashSet<Integer> set = new HashSet<>();
+		    set.add(x);
+		    
+		    for(int i=0;i<st.length();i++){
+		        if(st.charAt(i) == 'R'){
+		            x++;
+		            set.add(x);
+		        }
+		        else{
+		            x--;
+		            set.add(x);
+		        }
+		    }
+		    System.out.println(set.size());
+		}
+	}
+}
+
