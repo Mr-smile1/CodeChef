@@ -1,0 +1,57 @@
+Problem Code:CRDGAME
+
+
+class Codechef
+{
+    static int digitSum(int n){
+		int sum=0;
+		while(n>0){
+			int temp=n%10;
+			sum+=temp;
+			n/=10;
+		}
+		return sum;
+	}
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    int chef=0;
+		    int morty=0;
+		    
+		    while(n-- > 0){
+		        int a = s.nextInt();
+		        int b = s.nextInt();
+		        if(a > 9 || b > 9){
+		            a = digitSum(a);
+		            b = digitSum(b);
+		        }
+                
+                if(a > b){
+                    chef++;
+                }
+                else if(b > a){
+                    morty++;
+                }
+                else{
+                    chef++;
+                    morty++;
+                }
+		    }
+		    if(chef > morty){
+		        System.out.println(0 + " " + chef);
+		    }
+		    else if(chef < morty){
+		        System.out.println(1 + " " + morty);
+		    }
+		    else{
+		        System.out.println(2 + " " + chef);
+		    }
+		}
+	}
+}
+
+
