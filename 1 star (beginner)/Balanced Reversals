@@ -1,0 +1,21 @@
+Problem Code:BALREV
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t-- > 0){
+		    int n = s.nextInt();
+		    String st = s.next();
+		    
+		    char c[] = st.toCharArray();
+		    Arrays.sort(c);
+		    System.out.println(c);
+		}
+	}
+}
+
+
