@@ -1,0 +1,33 @@
+Problem Code:EQPAIR
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		while(t < 0){
+		    int N = s.nextInt();
+		    long A[] = new long[N];
+		    Map<Long, Long> mp = new HashMap<>();
+		    for(int j = 0; j < N; j++){
+		        A[j] = s.nextInt();
+		        if(mp.containsKey(A[j])) {
+		        	mp.put(A[j], mp.get(A[j])+1);
+		        }
+		        else {
+		        	mp.put(A[j], (long) 1);
+		        }
+		    }
+		    long ans = 0;
+		    for (Map.Entry<Long,Long> entry : mp.entrySet()) {
+	            ans += (entry.getValue() * (entry.getValue()-1))/ 2;
+		    }
+		    
+		    System.out.println(ans);
+		}
+	}
+}
+
+
