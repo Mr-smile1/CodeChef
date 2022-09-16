@@ -7,7 +7,7 @@ class Codechef
 	{
 	    Scanner s = new Scanner(System.in);
 		int t = s.nextInt();
-		while(t < 0){
+		while(t-- > 0){
 		    int N = s.nextInt();
 		    long A[] = new long[N];
 		    Map<Long, Long> mp = new HashMap<>();
@@ -29,5 +29,6 @@ class Codechef
 		}
 	}
 }
+
 
 
